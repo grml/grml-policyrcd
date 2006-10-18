@@ -1,0 +1,47 @@
+.\" Filename:      grml-policy-rc.d.1
+.\" Purpose:       man page for grml-policy-rc.d
+.\" Authors:       grml-team (grml.org), (c) Michael Prokop <mika@grml.org>
+.\" Bug-Reports:   see http://grml.org/bugs/
+.\" License:       This file is licensed under the GPL v2.
+.\" Latest change: Die Jul 18 00:38:45 CEST 2006 [mika]
+.\"###############################################################################
+
+.\"###############################################################
+.TH grml\-policy-rc.d 8 "2006-07-18" "grml-policy-rc.d"
+.SH "NAME"
+grml\-policy\-rc.d \- wrapper for invoke-rc.d
+.\"#######################################################
+
+.P
+This is a wrapper script for invoke-rc.d to avoid automatical
+startup of init scripts via invoke-rc.d.  It is designed to be
+used e.g. with policyrcd-script-zg2. To configure it take a look
+at /etc/policy-rc.d.conf and /etc/zg-policy-rc.d.conf.
+
+First of all make sure the package policyrcd-script-zg2
+(which provides the /usr/sbin/policy-rc.d interface) is
+installed.
+
+In policyrcd-script-zg2's configuration file named
+/etc/zg-policy-rc.d.conf the script /usr/sbin/grml-policy-rc.d is
+defined as the interface for handling invoke-rc.d's startup
+policy. grml-policy-rc.d can be configure via
+/etc/policy-rc.d.conf.
+
+By default you won't notice any differences to Debian's default
+behaviour, except that invoke-rc.d won't be executed if a chroot
+has been detected (detection: /proc is missing). If you want to
+disable automatical startup of newly installed packages (done via
+the invoke-rc.d mechanism) just set EXITSTATUS to '101' in
+/etc/policy-rc.d.conf. To restore the default behaviour set
+EXITSTATUS back to '0' in /etc/policy-rc.d.conf.
+
+.SH "BUGS"
+Probably. Please report any bugs you find and report feedback and
+suggestions to the grml-team.  See http://grml.org/bugs/ for
+further information.  Thank you!
+
+.SH "COPYRIGHT"
+Copyright \(co 2006 by the grml-team.
+.\"###### END OF FILE ##########################################################
+.\" vim:tw=60
