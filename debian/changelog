@@ -1,3 +1,10 @@
+grml-policyrcd (0.1-2) unstable; urgency=low
+
+  * Chroot detection should work for 2.6.18 and beyond too.
+    Code taken from mdadm.config, svn revision 222 by madduck.
+
+ -- Michael Prokop <mika@grml.org>  Wed, 18 Oct 2006 22:46:05 +0200
+
 grml-policyrcd (0.1-1) unstable; urgency=low
 
   * Initial release.
