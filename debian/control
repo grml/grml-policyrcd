@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5)
 Standards-Version: 3.7.2
 
 Package: grml-policyrcd
-Architecture: any
+Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, policyrcd-script-zg2
 Conflicts: grml-scripts (<= 0.7-37)
 Description: wrapper for and around invoke-rc.d and policyrcd-script-zg2
