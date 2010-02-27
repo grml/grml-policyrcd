@@ -21,16 +21,18 @@ install: build
 	dh_testdir
 	dh_testroot
 	dh_clean -k 
-	dh_installdirs usr/sbin/
+	dh_installdirs usr/sbin/ etc
 
-	install -m 755 grml-policy-rc.d debian/grml-policyrcd/usr/sbin/grml-policy-rc.d
-
-# Build architecture-independent files here.
-binary-indep: build install
-# We have nothing to do by default.
+	install -m 755 grml-policy-rc.d    debian/grml-policyrcd/usr/sbin/grml-policy-rc.d
+	install -m 644 policy-rc.d.conf    debian/grml-policyrcd/etc/policy-rc.d.conf
+	install -m 644 zg-policy-rc.d.conf debian/grml-policyrcd/etc/zg-policy-rc.d.conf
 
 # Build architecture-dependent files here.
 binary-arch: build install
+# We have nothing to do by default.
+
+# Build architecture-independent files here.
+binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs 
