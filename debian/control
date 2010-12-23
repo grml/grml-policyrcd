@@ -10,11 +10,10 @@ Vcs-Browser: http://git.grml.org/?p=grml-policyrcd.git
 
 Package: grml-policyrcd
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}, policyrcd-script-zg2
-Conflicts: grml-scripts (<= 0.7-37), grml-etc (<< 1.1.34)
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts: policyrcd-script-zg2
 Description: wrapper for and around invoke-rc.d and policyrcd-script-zg2
  grml-policy-rc.d is a wrapper script for invoke-rc.d to
- avoid automatical startup of init scripts via invoke-rc.d. It
- is designed to be used e.g. with policyrcd-script-zg2. To
- configure it take a look at /etc/policy-rc.d.conf and
- /etc/zg-policy-rc.d.conf and the manpage of grml-policy-rc.d.
+ avoid automatical startup of init scripts via invoke-rc.d.
+ To configure it take a look at /etc/policy-rc.d.conf and
+ the manpage of grml-policy-rc.d.
