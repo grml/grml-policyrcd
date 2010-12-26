@@ -6,10 +6,15 @@
 # License:       This file is licensed under the GPL v2.
 ################################################################################
 
-# test for chroot
-if test "$(/usr/bin/stat -c "%d/%i" /)" != "$(/usr/bin/stat -Lc "%d/%i" /proc/1/root 2>/dev/null)" ; then
-   # notify invoke-rc.d that nothing should be done -- we are in a chroot
-   exit 101
+## test for chroot
+# make sure /proc/1/root can be read, if not either /proc is not mounted
+# or it is not executed with root permissions (and "sudo invoke-rc.d $service"
+# might fail), if so don't continue
+if [ -d /proc/1 ] && readlink -f /proc/1/root >/dev/null 2>&1; then
+  if test "$(/usr/bin/stat -c "%d/%i" /)" != "$(/usr/bin/stat -Lc "%d/%i" /proc/1/root 2>/dev/null)" ; then
+     # notify invoke-rc.d that nothing should be done -- we are in a chroot
+     exit 101
+  fi
 fi
 
 # read configuration file
