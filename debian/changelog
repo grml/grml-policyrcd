@@ -1,3 +1,14 @@
+grml-policyrcd (0.3.0) unstable; urgency=low
+
+  * [0ff9102] Bump Standards-Version to 3.9.1.
+  * [9ee46dd] Drop policyrcd-script-zg2 from depends and add it to
+    conflicts instead.
+  * [d7dd305] Rework policy-rc.d handling.
+  * [a5d4366] Make sure we can read /proc/1/root, otherwise do not
+    execute chroot test.
+
+ -- Michael Prokop <mika@grml.org>  Mon, 27 Dec 2010 00:39:10 +0100
+
 grml-policyrcd (0.2.0) unstable; urgency=low
 
   * Integrate configuration files /etc/zg-policy-rc.d.conf
