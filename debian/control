@@ -7,6 +7,8 @@ Standards-Version: 3.9.1
 Homepage: http://git.grml.org/?p=grml-policyrcd.git
 Vcs-git: git://git.grml.org/grml-policyrcd.git
 Vcs-Browser: http://git.grml.org/?p=grml-policyrcd.git
+Origin: Grml
+Bugs: mailto:bugs@grml.org
 
 Package: grml-policyrcd
 Architecture: all
