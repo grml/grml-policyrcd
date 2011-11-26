@@ -1,3 +1,13 @@
+grml-policyrcd (0.3.1) unstable; urgency=low
+
+  [ Christian Hofstaedtler ]
+  * [100026d] Add debian/control headers Origin, Bugs
+
+  [ Michael Prokop ]
+  * [0035d7a] Bump Standards-Version to 3.9.2
+
+ -- Michael Prokop <mika@grml.org>  Sat, 26 Nov 2011 19:58:38 +0100
+
 grml-policyrcd (0.3.0) unstable; urgency=low
 
   * [0ff9102] Bump Standards-Version to 3.9.1.
