@@ -1,0 +1,2 @@
+usr/sbin/policy-rc.d usr/sbin/grml-policy-rc.d
+usr/share/man/man8/policy-rc.d.8.gz usr/share/man/man8/grml-policy-rc.d.8.gz
