@@ -1,0 +1,2 @@
+policy-rc.d usr/sbin
+policy-rc.d.conf etc

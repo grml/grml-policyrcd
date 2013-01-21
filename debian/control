@@ -2,7 +2,7 @@ Source: grml-policyrcd
 Section: admin
 Priority: optional
 Maintainer: Michael Prokop <mika@grml.org>
-Build-Depends: debhelper (>= 5)
+Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
 Homepage: http://git.grml.org/?p=grml-policyrcd.git
 Vcs-git: git://git.grml.org/grml-policyrcd.git
@@ -12,7 +12,7 @@ Bugs: mailto:bugs@grml.org
 
 Package: grml-policyrcd
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${misc:Depends}
 Conflicts: policyrcd-script-zg2
 Description: wrapper for and around invoke-rc.d and policyrcd-script-zg2
  grml-policy-rc.d is a wrapper script for invoke-rc.d to
