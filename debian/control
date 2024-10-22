@@ -5,8 +5,8 @@ Maintainer: Michael Prokop <mika@grml.org>
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
 Homepage: http://git.grml.org/?p=grml-policyrcd.git
-Vcs-git: git://git.grml.org/grml-policyrcd.git
-Vcs-Browser: http://git.grml.org/?p=grml-policyrcd.git
+Vcs-git: https://github.com/grml/grml-policyrcd.git
+Vcs-Browser: https://github.com/grml/grml-policyrcd
 Origin: Grml
 Bugs: mailto:bugs@grml.org
 
