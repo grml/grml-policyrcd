@@ -2,7 +2,8 @@ Source: grml-policyrcd
 Section: admin
 Priority: optional
 Maintainer: Michael Prokop <mika@grml.org>
-Build-Depends: debhelper (>= 8)
+Build-Depends:
+ debhelper-compat (= 13),
 Standards-Version: 4.7.0
 Homepage: https://github.com/grml/grml-policyrcd
 Vcs-Git: https://github.com/grml/grml-policyrcd.git
