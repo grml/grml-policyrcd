@@ -13,8 +13,10 @@ Bugs: mailto:bugs@grml.org
 
 Package: grml-policyrcd
 Architecture: all
-Depends: ${misc:Depends}
-Conflicts: policyrcd-script-zg2
+Depends:
+ ${misc:Depends},
+Conflicts:
+ policyrcd-script-zg2,
 Description: wrapper for and around invoke-rc.d and policyrcd-script-zg2
  grml-policy-rc.d is a wrapper script for invoke-rc.d to
  avoid automatical startup of init scripts via invoke-rc.d.
