@@ -1,3 +1,18 @@
+grml-policyrcd (0.5.0) unstable; urgency=medium
+
+  [ Chris Hofstaedtler ]
+  * [96ecbbb] debian: update Vcs-Git and Vcs-Browser
+
+  [ Michael Prokop ]
+  * [c4c3ac9] Ship debian/gbp.conf for gbp usage
+  * [daba1c5] debian: Bump Standards-Version to 4.7.0
+  * [0e8a6aa] Bump to compat level via Build-Depends on debhelper-compat
+    (13)
+  * [486f402] debian: run wrap-and-sort -tas, and drop empty debian/docs
+  * [3efc989] Add debian/source/format
+
+ -- Michael Prokop <mika@grml.org>  Fri, 22 Nov 2024 15:52:30 +0100
+
 grml-policyrcd (0.4.0) unstable; urgency=low
 
   [ Lukas Anzinger ]
